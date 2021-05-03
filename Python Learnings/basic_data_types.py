@@ -1,4 +1,47 @@
 import re
+
+from collections import Counter
+import time
+
+shoe_size_cnt = Counter()
+
+mylist = [3,4,3,3]
+#shoe_size_cnt[3] += 1
+#shoe_size_cnt[4] += 1
+#shoe_size_cnt[3] += 1
+#shoe_size_cnt[3] += 1
+
+#print(Counter(mylist).)
+shoe_size_cnt = Counter(mylist)
+print(shoe_size_cnt)
+deduct = {3:1}
+shoe_size_cnt.subtract(deduct)
+print(shoe_size_cnt)
+exit(0)
+#print(shoe_size_cnt.items())
+
+#print(Counter(mylist).keys())
+#print(Counter(mylist).values())
+
+deduct = {3, 1}
+Counter(mylist).subtract(deduct)
+print(Counter(mylist).items())
+
+cnt = Counter({5:3,2:4})
+print(cnt)
+#deduct = {1:1, 2:2}
+deduct = {5:1}
+cnt.subtract(deduct)
+print(cnt)
+
+#Counter(mylist).pop(str("3"))
+#print(Counter(mylist))
+
+time.sleep(3)
+
+#for i in range(1,10+1):
+#        print(i)
+exit(0)
 #121426 # Here, 1 is an alternating repetitive digit.
 #523563 # Here, NO digit is an alternating repetitive digit.
 #552523 # Here, both 2 and 5 are alternating repetitive digits.
